@@ -1,0 +1,7 @@
+History.txt
+Manifest.txt
+README.txt
+Rakefile
+lib/rdoc/discover.rb
+lib/rdoc/parser/perl_pod.rb
+test/test_rdoc_parser_perl.rb
