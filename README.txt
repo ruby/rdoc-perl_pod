@@ -1,6 +1,6 @@
 = rdoc-perl_pod
 
-* FIX
+* https://github.com/rdoc/rdoc-perl_pod
 
 == DESCRIPTION:
 
