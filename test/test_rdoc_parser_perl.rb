@@ -4,7 +4,7 @@ require 'rubygems'
 require 'minitest/autorun'
 require 'rdoc'
 require 'rdoc/options'
-require 'rdoc/parser/perl'
+require 'rdoc/parser/perl_pod'
 
 class TestRdocParserPerlPOD < MiniTest::Unit::TestCase
 
