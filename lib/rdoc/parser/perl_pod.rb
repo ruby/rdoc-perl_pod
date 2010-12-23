@@ -35,17 +35,15 @@ class RDoc::Parser::PerlPOD < RDoc::Parser
   end
 
   ##
-  # Extract the Pod(-like) comments from the code.
-  # At its most basic there will ne no need to distinguish
-  # between the different types of header, etc.
+  # Extract the Pod(-like) comments from the code.  At its most basic there
+  # will ne no need to distinguish between the different types of header, etc.
   #
-  # This uses a simple finite state machine, in a very
-  # procedural pattern. I could "replace case with polymorphism"
-  # but I think it would obscure the intent, scatter the
-  # code all over tha place.  This machine is necessary
-  # because POD requires that directives be preceded by
-  # blank lines, so reading line by line is necessary,
-  # and preserving state about what is seen is necesary.
+  # This uses a simple finite state machine, in a very procedural pattern. I
+  # could "replace case with polymorphism" but I think it would obscure the
+  # intent, scatter the code all over tha place.  This machine is necessary
+  # because POD requires that directives be preceded by blank lines, so
+  # reading line by line is necessary, and preserving state about what is seen
+  # is necesary.
 
   def scan
     @top_level.comment ||= ""
@@ -143,9 +141,9 @@ class RDoc::Parser::PerlPOD < RDoc::Parser
   end
 
   ##
-  # Filter the perl markup that does the same as the rdoc
-  # filtering.  Only basic for now. Will probably need a
-  # proper parser to cope with C<<...>> etc
+  # Filter the perl markup that does the same as the rdoc filtering.  Only
+  # basic for now. Will probably need a proper parser to cope with C<<...>>
+  # etc.
 
   def filter(comment)
     return '' if comment =~ /^=pod\s*$/
